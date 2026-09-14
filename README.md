@@ -2,7 +2,8 @@
 
 This bucket distributes the Windows amd64 builds of `wirectl` and
 `wirectl-connect` from their official GitHub Releases. Windows ARM is not
-included in the support matrix.
+included in the support matrix. `wire-connect` 1.2.2 or newer is required for
+resolving Scoop installation junctions when updating or installing the helper.
 
 Add the bucket and install both commands from PowerShell:
 

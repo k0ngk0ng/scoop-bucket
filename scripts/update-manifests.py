@@ -11,7 +11,7 @@ import urllib.request
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGES = {
     "wirectl": {"minimum": (0, 2, 3), "targets": ("windows-amd64",)},
-    "wire-connect": {"minimum": (1, 2, 1), "targets": ("windows-amd64",)},
+    "wire-connect": {"minimum": (1, 2, 2), "targets": ("windows-amd64",)},
 }
 
 
