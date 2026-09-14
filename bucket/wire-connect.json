@@ -1,11 +1,11 @@
 {
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Encrypted point-to-point networking with UDP hole punching and HTTPS relay fallback",
     "homepage": "https://github.com/k0ngk0ng/wire-connect",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/k0ngk0ng/wire-connect/releases/download/v1.2.1/wire-connect-1.2.1-windows-amd64.zip",
-            "hash": "7e192f92d65d20fa7b9b36916d5d4b21f34cb85eabdd76958186ddcd2654d8f0"
+            "url": "https://github.com/k0ngk0ng/wire-connect/releases/download/v1.2.2/wire-connect-1.2.2-windows-amd64.zip",
+            "hash": "1eb02a1ccccb1ca07c81e4f69dc019fb346097525f26c12e55c4ae792b7fb2b4"
         }
     },
     "depends": [
