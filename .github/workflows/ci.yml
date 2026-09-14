@@ -27,6 +27,9 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
+          # Scoop embeds its root in Windows junction targets; use native separators.
+          $env:SCOOP = [IO.Path]::GetFullPath($env:SCOOP)
+          "SCOOP=$env:SCOOP" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
           New-Item -ItemType Directory -Path "$env:GITHUB_WORKSPACE/.cache" -Force | Out-Null
           Invoke-WebRequest https://get.scoop.sh -OutFile "$env:GITHUB_WORKSPACE/.cache/install-scoop.ps1"
           # Hosted Windows runners are administrators; end users install normally.
