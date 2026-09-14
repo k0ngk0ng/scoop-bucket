@@ -25,7 +25,7 @@ function Assert-Installation {
     $marker = "$bin/.wire-connect-package-manager"
     if ([Convert]::ToHexString([IO.File]::ReadAllBytes($marker)) -cne '73636F6F70') { throw 'Marker must be plain scoop without a BOM' }
     $output = @(& wirectl connect update 2>&1)
-    if ($LASTEXITCODE -ne 1 -or ($output -join "`n") -notmatch 'scoop update wire-connect') { throw 'Managed updater did not direct the user to Scoop' }
+    if ($LASTEXITCODE -ne 1 -or ($output -join "`n") -notmatch 'scoop update wire-connect') { throw "Managed updater failed: exit=$LASTEXITCODE; output=$($output -join [Environment]::NewLine)" }
     $global:LASTEXITCODE = 0
 }
 Assert-Installation
