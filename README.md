@@ -44,6 +44,20 @@ archive against the release checksum instead of trusting a mutable download.
 The release archive also contains the official Wintun DLL and its license;
 the installer does not download a driver from a third-party site.
 
+## Voice conversations
+
+```powershell
+scoop install k0ngk0ng/wire-talk
+wirectl talk invite
+```
+
+The package is `wire-talk`; the command remains `wirectl talk`. The legacy
+`talk` manifest only depends on `wire-talk` and installs no second executable.
+If you installed the old standalone `talk` package, stop audio, run `scoop update`,
+`scoop uninstall talk`, then `scoop install k0ngk0ng/wire-talk`. Room configuration
+in AppData is preserved. Reinstall login services with `wirectl talk daemon install`
+after migration. Future upgrades use `scoop update wire-talk`.
+
 ## Maintainer checks
 
 The Windows workflow installs both manifests in a disposable Scoop profile,
