@@ -1,13 +1,13 @@
 {
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Direct encrypted microphone and speaker conversations",
   "homepage": "https://github.com/k0ngk0ng/wire-talk",
   "license": "MIT",
   "depends": "k0ngk0ng/wirectl",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/k0ngk0ng/wire-talk/releases/download/v0.1.11/wire-talk-0.1.11-windows-amd64.zip",
-      "hash": "1828f08e013a6e06c895141ee4bb9a4e7bbd1e5c8613d5065b2334a44e1bf9f5"
+      "url": "https://github.com/k0ngk0ng/wire-talk/releases/download/v0.1.12/wire-talk-0.1.12-windows-amd64.zip",
+      "hash": "25a53b922cb1185fad83d95859b1f9b8cc5b51797d70b23a42b2e96084d570e4"
     }
   },
   "bin": "bin/wirectl-talk.exe",
