@@ -1,11 +1,11 @@
 {
-  "version": "0.1.96",
+  "version": "0.1.97",
   "description": "Headless StoneAge game client for terminals and agents",
   "homepage": "https://github.com/k0ngk0ng/stoneage",
   "license": "Unknown",
-  "url": "https://github.com/k0ngk0ng/stoneage/releases/download/v0.1.96/stoneage-sactl-v0.1.96-windows-amd64.zip",
-  "hash": "f6230f42cb51910fe326bcaa06100b7df109e79d9719bb8f709ac533c43c76b9",
-  "extract_dir": "stoneage-sactl-v0.1.96-windows-amd64",
+  "url": "https://github.com/k0ngk0ng/stoneage/releases/download/v0.1.97/stoneage-sactl-v0.1.97-windows-amd64.zip",
+  "hash": "6ef4c68bed2fbcb5f405bf9f99a92e895e76bb1b62f79fd40ab16bb772294638",
+  "extract_dir": "stoneage-sactl-v0.1.97-windows-amd64",
   "bin": "sactl.exe",
   "checkver": {
     "github": "https://github.com/k0ngk0ng/stoneage"
